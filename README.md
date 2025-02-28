@@ -115,5 +115,5 @@ Some of the workable local LLMs tested:
 For those who need hand-on local embedding API, an embedding server example is added to "external_example". You will need to install "sentence_transformers" to run it. After deployment, modify "settings.py" to finish configuration:
 
 ```python
-EMBEDDING_BASE_URL = 'https://localhost:8001/v1' # local embedding deployment URL
+EMBEDDING_BASE_URL = 'http://localhost:8001/v1' # local embedding deployment URL
 ```
