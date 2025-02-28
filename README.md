@@ -2,7 +2,7 @@
 <p align="center">
   <img src=".public/image.png" alt="Your image description" width="200" style="display: block; margin: 0 auto;">
 </p>
-🚀 Embark on a exciting adventure with Loyal Elephie, your faithful AI sidekick! This project combines the power of a neat Next.js web UI and a mighty Python backend, leveraging the latest advancements in Large Language Models (LLMs) and Retrieval Augmented Generation (RAG) to deliver a seamless and meaningful chatting experience! 🎉
+🚀 Embark on an exciting adventure with Loyal Elephie, your faithful AI sidekick! This project combines the power of a neat Next.js web UI and a mighty Python backend, leveraging the latest advancements in Large Language Models (LLMs) and Retrieval Augmented Generation (RAG) to deliver a seamless and meaningful chatting experience! 🎉
 
 ## Features
 
@@ -112,4 +112,8 @@ Some of the workable local LLMs tested:
 * Meta-Llama-3-70B-Instruct (Best so far)
 * Qwen2-72b-instruct (Best for non-English languages)
 
-For those who need hand-on local embedding API, an embedding server example is added to "external_example".
+For those who need hand-on local embedding API, an embedding server example is added to "external_example". You will need to install "sentence_transformers" to run it. After deployment, modify "settings.py" to finish configuration:
+
+```python
+EMBEDDING_BASE_URL = 'https://localhost:8001/v1' # local embedding deployment URL
+```
